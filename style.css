@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    /* border: 2px solid black; */
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 .2rem .5rem rgb(183, 180, 178);
+    z-index: 10;
+
+}
+section{
+    padding:3rem 9% ;
+}
+
+
+span{
+    
+    font-family: Montserrat,sans-serif;
+    color: Red;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .2em;
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+
+}
+
+nav{
+    margin-top: 2rem;
+    padding: 0.1rem;
+    
+}
+a{
+    text-decoration: none;
+    color:#1c1b1b;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    font-style: Montserrat,sans-serif;
+    padding: 0 1.5rem;
+    /* transition: color .2s ease-in-out; */
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.faIcons a{
+    font-size: 18px;
+    color: black;
+    margin-top:1.3rem ;
+    
+}
+
+ .nav-items a:hover{
+    color: rgb(151, 97, 31);
+}
+ .faIcons a:hover{
+    color: rgb(151, 97, 31);
+}
+
+.section-home{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: url("Asset/images/background.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container{
+    color: white;
+    max-width: 30rem;
+    line-height: 2.8rem;
+}
+
+#section-span{
+    /* position: absolute;
+    text-align: center;
+    width: 90%; */
+    font-size: 3.5rem;
+    font-style: Montserrat,sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.container p{
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(225, 212, 212);
+    border-radius: 2.2px;
+    padding: 2px;
+    /* margin: 4px 30rem;
+    */
+    margin: 9px 0.1%;
+    
+}
+
+
+.btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+ /* .btn-div :hover{
+    color: white ;
+    background-color: rgb(151, 97, 31);
+    
+ } */
+ 
+ .best-sellers-section{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 0;
+}
+.best-sellers-section a{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    
+}
+
+.best-sellers-section a:first-child {
+    text-decoration: underline; 
+}
+
+.best-sellers-section a:hover {
+    text-decoration: none;
+    color: rgb(151, 97, 31);
+
+}
+
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:8rem;
+    flex-direction: row;
+    
+    /* box-shadow: 0 .2rem .5rem rgb(183, 180, 178); */
+
+    
+}
+
+.products .box-container .box{
+    flex: .2 1 15rem;
+    /* box-shadow: 0 5rem 1.5rem rgba(227, 52, 52, 0.1); */
+    /* border-radius: .5rem; */
+    border: .1rem solid rgba(0,0,0,.1);
+    position:relative;
+    cursor: pointer;
+    
+
+
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top:0.5rem  ;
+    left:0.5rem;
+    padding: .1rem 0rem;
+    font-size: 0.8rem;
+    color: black;
+    z-index: 1;
+    border-radius: .2rem;
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.icons a{
+    display: contents;
+    color: rgb(151, 97, 31);
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    
+    /* overflow: hidden; */
+
+}
+
+/* .product-content h4{
+    display: contents;
+} */
+
+.products .box-container .box .image img{
+    /* width: 10rem; */
+    height: 15rem;
+    padding-bottom: 1rem ;
+}
+
+.prod-content .price{
+    color: red;
+    font-size: medium;
+    font-weight: 500;
+}
+   
+
+.another-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 3rem ;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.classbox{
+    display: flex;
+    justify-content: center;
+}
+
+.box-1{
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 30px;
+    font-weight: 600;
+    width: 461px;
+    height: 450px;
+    display: inline-block;
+    background: url("Asset/images/back2.jpg");
+    background-size: cover; 
+    border: 1.5px solid rgb(247, 242, 242);
+    text-transform: uppercase;
+}
+
+.box-2{
+   
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 30px;
+    font-weight: 600;
+    width: 461px;
+    height: 450px;
+    display: inline-block;
+    background: url("Asset/images/gift2.jpg");
+    background-size: cover; 
+    border: 1.5px solid rgb(247, 242, 242);
+    text-transform: uppercase;
+}
+
+
+.box-3{
+    color: white;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 30px;
+    font-weight: 600;
+    width: 461px;
+    height: 450px;
+    display: inline-block;
+    background: url("Asset/images/back3.jpg");
+    background-size: cover; 
+    border: 1.5px solid rgb(247, 242, 242);
+    text-transform: uppercase;
+}
+
+.zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  
+
+.classbox > div {
+    margin: 10px; /* Adjust the margin as needed */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.classbox > div:hover {
+    transform: scale(1.1);
+}
+
+  .row .image-container{
+    flex: 1 1 40rem;
+    position: relative;
+    cursor: none;
+   
+  }
+  .image-container img{
+    margin-top: 10px;
+    padding-top: 50px;
+    width: 90%;
+    height: 90%;
+    /* border: 0.5rem solid white; */
+   
+}
+
+
+.row {
+    display: flex;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.textSection {
+    margin-top:70px ;
+    text-align: left;
+    max-width: 600px;  
+    cursor: pointer;
+}
+
+#thirdcontent h3{
+    font-style: Montserrat,sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#thirdcontent p{
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    font-style: bold;
+    line-height: 1.65
+   
+}
+#thirdcontent h3:hover{
+    color: rgb(151, 97, 31);
+}
+
+.about-section{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 .2rem .5rem rgb(183, 180, 178); */
+}
+.about-section a{
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+}
+
+.about-section a:first-child {
+    text-decoration: underline; 
+}
+
+.about-section a:hover {
+    text-decoration: none;
+    color: rgb(151, 97, 31);
+
+}
+.box-border{
+    border-top: .1rem solid rgb(151, 148, 148);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+ .footer .box-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:9.8rem
+ }
+
+ .footer .box-container .box h3{
+    flex: 1 1 25rem;
+    font-size: 1.7rem;
+    color:rgb(173, 82, 17);
+    padding: 0.1rem 0;
+
+}
+.footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size: 0.6rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    color: #333;
+    border-top: .1rem solid rgb(201, 194, 194) ;
+
+}
+
+.footer .credit span{
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    
+    text-align: center;
+}
+
+
+@media(max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    
+}
+
+@media(max-width: 786px){
+    
+}
